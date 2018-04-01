@@ -1,0 +1,127 @@
+{
+	"mapList":{
+		"albumList":[{
+			"albumImgSrc":"./static/music/album/yongqi/100751465709891.jpg",
+			"playerBg":"./static/music/album/yongqi/playerBg.jpg",
+			"albumBg":"./static/music/album/yongqi/albumBG.jpg",
+			"albumTitle":"勇气",
+			"albumSinger":"梁静茹",
+			"albumMusicList":[{
+				"musicName":"勇气",
+				"musicSinger":"梁静茹",
+				"musicUrl":"./static/music/album/yongqi/梁静茹 - 01. 勇气.mp3",
+				"lyric":"./static/music/album/yongqi/梁静茹 - 01. 勇气.lrc"
+			},{
+				"musicName":"如果有一天",
+				"musicSinger":"梁静茹",
+				"musicUrl":"./static/music/album/yongqi/梁静茹 - 02. 如果有一天.mp3",
+				"lyric":"./static/music/album/yongqi/梁静茹 - 02. 如果有一天.lrc"
+			},{
+				"musicName":"没有水的游泳池",
+				"musicSinger":"梁静茹",
+				"musicUrl":"./static/music/album/yongqi/梁静茹 - 04. 没有水的游泳池.mp3",
+				"lyric":"./static/music/album/yongqi/梁静茹 - 04. 没有水的游泳池.lrc"
+			},{
+				"musicName":"半个月亮",
+				"musicSinger":"梁静茹",
+				"musicUrl":"./static/music/album/yongqi/梁静茹 - 03. 半个月亮.mp3",
+				"lyric":"./static/music/album/yongqi/梁静茹 - 03. 半个月亮.lrc"
+			},{
+				"musicName":"最烂的理由",
+				"musicSinger":"梁静茹",
+				"musicUrl":"./static/music/album/yongqi/梁静茹 - 05. 最烂的理由.mp3",
+				"lyric":"./static/music/album/yongqi/梁静茹 - 05. 最烂的理由.lrc"
+			},{
+				"musicName":"爱你不是两三天",
+				"musicSinger":"梁静茹",
+				"musicUrl":"./static/music/album/yongqi/梁静茹 - 06. 爱你不是两三天.mp3",
+				"lyric":"./static/music/album/yongqi/梁静茹 - 06. 爱你不是两三天.lrc"
+			}]
+		},{
+			"albumImgSrc":"./static/music/album/bujianbusan/3246857838636040.jpg",
+			"playerBg":"./static/music/album/bujianbusan/playerBg.jpg",
+			"albumBg":"./static/music/album/bujianbusan/albumBg.png",
+			"albumTitle":"不见不散",
+			"albumSinger":"莫文蔚",
+			"albumMusicList":[{
+				"musicName":"不见不散",
+				"musicSinger":"莫文蔚",
+				"musicUrl":"./static/music/album/bujianbusan/莫文蔚 - 不散，不见.mp3",
+				"lyric": "./static/music/album/bujianbusan/莫文蔚 - 不散，不见.lrc"
+			},{
+				"musicName":"看看",
+				"musicSinger":"莫文蔚",
+				"musicUrl":"./static/music/album/bujianbusan/莫文蔚 - 看看.mp3",
+				"lyric":"./static/music/album/bujianbusan/莫文蔚 - 看看.lrc"
+			},{
+				"musicName":"老掉牙",
+				"musicSinger":"莫文蔚",
+				"musicUrl":"./static/music/album/bujianbusan/莫文蔚 - 老掉牙.mp3",
+				"lyric":"./static/music/album/bujianbusan/莫文蔚 - 老掉牙.lrc"
+			},{
+				"musicName":"时间里的飞人",
+				"musicSinger":"莫文蔚",
+				"musicUrl":"./static/music/album/bujianbusan/莫文蔚 - 时间里的飞人.mp3",
+				"lyric":"./static/music/album/bujianbusan/莫文蔚 - 时间里的飞人.lrc"
+			},{
+				"musicName":"亲爱的：",
+				"musicSinger":"莫文蔚",
+				"musicUrl":"./static/music/album/bujianbusan/莫文蔚 - 亲爱的：.mp3",
+				"lyric":"./static/music/album/bujianbusan/莫文蔚 - 亲爱的：.lrc"
+			},{
+				"musicName":"再见自己",
+				"musicSinger":"莫文蔚",
+				"musicUrl":"./static/music/album/bujianbusan/莫文蔚 - 再见自己.mp3",
+				"lyric":"./static/music/album/bujianbusan/莫文蔚 - 再见自己.lrc"
+			},{
+				"musicName":"只带一只行李箱",
+				"musicSinger":"莫文蔚",
+				"musicUrl":"./static/music/album/bujianbusan/莫文蔚 - 只带一只行李箱.mp3",
+				"lyric":"./static/music/album/bujianbusan/莫文蔚 - 只带一只行李箱.lrc"
+			}]
+		}],
+		"recommendList":[{
+			"musicName":"河山大好",
+			"musicSinger":"许嵩",
+			"musicUrl":"./static/music/recommend/河山大好.mp3",
+			"lyric":"./static/music/recommend/河山大好.lrc",
+			"albumImgSrc":"./static/music/recommend/许嵩.jpg",
+			"playerBg":"./static/music/recommend/许嵩bg.jpg"
+		},{
+			"musicName":"等你爱我",
+			"musicSinger":"陈奕迅",
+			"albumImgSrc":"./static/music/recommend/陈奕迅-等你爱我.jpg",
+			"musicUrl":"./static/music/recommend/等你爱我.mp3",
+			"lyric":"./static/music/recommend/等你爱我.lrc",
+			"playerBg":"./static/music/recommend/陈奕迅-等你爱我Bg.jpg"
+		},{
+			"musicName":"富士山下",
+			"musicSinger":"陈奕迅",
+			"albumImgSrc":"./static/music/recommend/陈奕迅-富士山下.jpg",
+			"musicUrl":"./static/music/recommend/陈奕迅-富士山下.mp3",
+			"lyric":"./static/music/recommend/陈奕迅-富士山下.lrc",
+			"playerBg":"./static/music/recommend/陈奕迅-富士山下Bg.jpg"
+		},{
+			"musicName":"给你们",
+			"musicSinger":"张宇",
+			"musicUrl":"./static/music/recommend/给你们.mp3",
+			"lyric":"./static/music/recommend/给你们.lrc",
+			"albumImgSrc":"./static/music/recommend/张宇-给你们.jpg",
+			"playerBg":"./static/music/recommend/张宇-给你们Bg.jpg"
+		},{
+			"musicName":"给我一个理由忘记",
+			"musicSinger":"a-lin",
+			"musicUrl":"./static/music/recommend/给我一个理由忘记.mp3",
+			"lyric":"./static/music/recommend/给我一个理由忘记.lrc",
+			"albumImgSrc":"./static/music/recommend/a-Lin-给我一个理由忘记.jpg",
+			"playerBg":"./static/music/recommend/a-Lin-给我一个理由忘记Bg.jpg"
+		},{
+			"musicName":"旅行的意义",
+			"musicSinger":"陈琦贞",
+			"musicUrl":"./static/music/recommend/陈绮贞-旅行的意义.mp3",
+			"lyric":"./static/music/recommend/陈绮贞-旅行的意义.lrc",
+			"albumImgSrc":"./static/music/recommend/陈绮贞-旅行的意义.jpg",
+			"playerBg":"./static/music/recommend/陈琦贞-旅行的意义Bg.jpg"
+		}]
+	}
+}

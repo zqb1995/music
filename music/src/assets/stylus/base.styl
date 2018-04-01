@@ -1,0 +1,28 @@
+@import "variable.styl"
+
+body, html
+  line-height: 1
+  font-family: "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+  user-select: none
+  // IOS设备上可点击元素点击时会产生半透明灰色背景，设置为transparent则可以消除
+  -webkit-tap-highlight-color: transparent
+  background: $color-background
+  color: $color-text
+
+.fl
+  float:left
+
+.fr
+  float:right
+
+.clearfix
+  zoom:1
+  &:after 
+    display: block; 
+    content: "."; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden; 
+
+img 
+  border:0
