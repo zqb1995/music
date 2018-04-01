@@ -75,12 +75,12 @@ export default {
     return {
       isShowLyric: false,      // 歌词 默认隐藏
       addSwithClass: false,    // 磁头、CD 默认拨开
-      isAddSwithClass: true,   // 磁头、CD 节流
+      isAddSwithClass: true,   // 磁头、CD 节流开关
       lyric: [],
       currentTime: 0,
       duration: 0,
       isShowSongList: false,
-      isNext: true             // bar节流
+      isNext: true             // 进度条 节流开关
     }
   },
   computed: {
@@ -102,7 +102,7 @@ export default {
         var vm = this
         setTimeout(function() {
           vm.addSwithClass = true
-        },0)
+        },200)
       }
   },
   methods: {
@@ -122,29 +122,35 @@ export default {
       this.isShowLyric = false
     },
     parseLyric(lyric) {
-      var lines = lyric.split(/\n/)             // 去掉换行
-      var getLyricTime = /\[\d{2}:\d{2}.\d{2}\]/g   // 匹配时间
-      var lyricArr = []
+      let lines = lyric.split(/\n/)                 // 去掉换行
+      let getLyricTime = /\[\d{2}:\d{2}.\d{2}\]/g   // 匹配时间
+      let lyricArr = []
       // 得到有时间的歌词
       while (!getLyricTime.test(lines[0])) {
         lines = lines.splice(1)
       }
+      // 清除末尾没有时间的项
       if (lines[lines.length - 1].length === 0) {
         lines.pop()
       }
-
+      /**
+       * lyricArr: [
+       *   [当前累计时间, 歌词],
+       *   ...
+       * ]
+       */
       lines.forEach(function(item) {
-        var index = item.indexOf(']')
-        var time = item.substr(1, index - 1)
-        var timeArr = time.split(':')
-        var geci = item.substr(index + 1)
+        let index = item.indexOf(']')
+        let time = item.substr(1, index - 1)
+        let timeArr = time.split(':')
+        let geci = item.substr(index + 1)
         lyricArr.push([timeArr[0] * 60 + parseFloat(timeArr[1]), geci])
-
+        // 歌词数组排序
         lyricArr.sort(function(a, b) {
           return a[0] - b[0]
         })
       })
-        return lyricArr
+      return lyricArr
     },
     goTime(event) {
       let audio = document.getElementById('audio')
@@ -181,6 +187,10 @@ export default {
     },
     playIndex(index) {
       this.addSwithClass = true
+      /**
+       * playType === 0  专辑页面播放
+       * playType === 1  推荐歌曲页面播放
+       */
       if (this.$store.state.player.playType === 0) {
         this.$store.commit("PLAYAUDIO", {
           playType: 0,
@@ -208,9 +218,10 @@ export default {
       let duration = document.getElementById('audio').duration
       let paused = document.getElementById('audio').paused
       let ended = document.getElementById('audio').ended
-
+      // 歌曲是否结束
       if (ended && this.isNext) {
         this.isNext = false
+        // 当前为最后一首, 则播放器暂停
         if (this.index === this.player.album.length - 1 && ended) {
           document.getElementById("audio").pause()
           this.addSwithClass = false
@@ -221,9 +232,10 @@ export default {
       }
       // 判断播放状态
       if (!paused) {
-        if (this.isAddSwithClass)
-        this.addSwithClass = true
-        this.isAddSwithClass = false
+        if (this.isAddSwithClass) {
+          this.addSwithClass = true
+          this.isAddSwithClass = false
+        }
       }
       this.currentTime = currentTime
       this.duration = duration
@@ -239,13 +251,10 @@ export default {
     },
     closeSongList() {
       this.isShowSongList = false
-
     },
-    // 歌曲链表点击事件
     songListIndex(index) {
       this.playIndex(index)
-    },
-
+    }
   },
   filters: {
     timeReversal: function(second) {

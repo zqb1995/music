@@ -56,7 +56,6 @@ export default {
       })
     },
     showPlayer(album, index) {
-      console.log(1223)
       this.$store.commit("PLAYAUDIO", {
         playType: 1,
         isShowPlayer: true,

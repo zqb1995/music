@@ -5,7 +5,7 @@
       <router-view/>
     </keep-alive>
     <transition name="slide">
-      <audio-player v-show="$store.state.player.isShowPlayer" :player="player"></audio-player>
+      <audio-player class="player" v-show="$store.state.player.isShowPlayer" :player="player"></audio-player>
     </transition>
   </div>
 </template>
@@ -30,4 +30,9 @@ export default {
 <style lang="stylus">
   // 全局样式
   @import '~@/assets/stylus/index.styl'
+  .player
+    transform translate3d(0, 0, 0)
+    transition: all 0.4s ease-in
+    &.slide-enter, &.slide-leave-to
+      transform translate3d(100%, 0, 0)
 </style>

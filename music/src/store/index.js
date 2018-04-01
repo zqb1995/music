@@ -18,10 +18,9 @@ export default new Vuex.Store({
       index: 0            // 专辑默认下标
     },
     player: {
-      isShowPlayer: false,
+      isShowPlayer: false, // 默认隐藏播放器
       index: null,
       id: null
-      // playerBg
     }
   },
   actions,
